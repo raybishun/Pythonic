@@ -16,6 +16,8 @@
 ## REPL
 
 1. Read-evaluate-print-loop
-2. To access, simply type 'Python' at the CMD prompt
-3. >>> (is the REPL prompt)
-4. >>> exit() - to exit
+2. To access REPL, simply type 'Python' at the CMD prompt
+```
+>>> 
+>>> exit() - to exit
+```
