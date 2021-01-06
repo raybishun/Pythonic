@@ -3,10 +3,15 @@
 - Not a comment block!!!
 """
 
-# Use of single (')
+'''
+- This is also a multi-line string object!!!
+- Not a comment block!!!
+'''
+
+# Use of single quotes ('...') with a string literal
 greeting1 = 'Hello, World!'
 
-# Use of quotes (")
+# Use of double quotes ("...") with a string literal
 greeting2 = "Hello, World!"
 
 # Python is not strongly typed
@@ -16,3 +21,6 @@ print(greeting1)
 print(greeting2)
 
 print(greeting1)
+
+index = greeting2.find(',')
+print(index)
