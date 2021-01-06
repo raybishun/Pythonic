@@ -24,3 +24,8 @@ print(greeting1)
 
 index = greeting2.find(',')
 print(index)
+
+# Scientific Notation
+scientific_notation = 4.5e9
+x = 4.5 * (10 ** 9)
+print(scientific_notation == x)
