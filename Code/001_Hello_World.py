@@ -92,3 +92,9 @@ print(f'{result1}{result2}{result3}{result4}') # returns 1111
 #  (1 * 2^3)  +  (1 * 2^2) + (1 * 2^1) + (1 * 2^0)   where ^ is 'power'
 # (1 * 2*2*2) +  (1 * 2*2) + (1 * 2) + (1)
 #        8    +        4   +      2  +  1 = 15
+
+# Issue with Floating-Point Accuracy
+# -----------------------------------------------------------------------------
+# In memory, Floating-Point numbers are stored as binary fractions
+# However, not all decimals can be represented as binary fractions, i.e. 0.1
+# So a rounding approximation is made
