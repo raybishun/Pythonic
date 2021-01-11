@@ -93,7 +93,7 @@ print(f'{result1}{result2}{result3}{result4}') # returns 1111
 # (1 * 2*2*2) +  (1 * 2*2) + (1 * 2) + (1)
 #        8    +        4   +      2  +  1 = 15
 
-# Issue with Floating-Point Accuracy
+# The Problem with Floating-Point Numbers
 # -----------------------------------------------------------------------------
 # In memory, Floating-Point numbers are stored as binary fractions
 # However, not all decimals can be represented as binary fractions, i.e. 0.1
