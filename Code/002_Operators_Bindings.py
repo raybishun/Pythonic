@@ -23,4 +23,22 @@ print(-a -1) # retuns -3
 # Binary representation of Complement 'a'
 print(bin(~a)) # returns -0b11
 
-# Truth Tables
+# Truth Tables (AND, OR, XOR, NOT)
+# -----------------------------------------------------------------------------
+print()
+a = 0b1001
+b = 0b1100
+
+# AND (both must be true)
+c = bin(a & b)
+print(bin(a))
+print(bin(b))
+print(c)
+print()
+
+# OR (one must be true)
+c = bin(a | b)
+print(bin(a))
+print(bin(b))
+print(c)
+print()
