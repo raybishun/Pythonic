@@ -66,3 +66,17 @@ print()
 # Left-Shift (padds with leading 0s)
 print(a << 2) # returns 24
 print()
+
+# Boolean Operators (1=true, 0=false), 
+#   and of course the 'not', 'or', 'and' operators
+# -----------------------------------------------------------------------------
+a = True
+print(bin(a)) # returns 0b1
+
+print(not False) # returns True
+
+print(True or False) # returns True
+
+print(False or False) # *** actually returns False ***
+
+print(False and False) # *** actually returns False ***
