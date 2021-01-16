@@ -80,3 +80,24 @@ print(True or False) # returns True
 print(False or False) # *** actually returns False ***
 
 print(False and False) # *** actually returns False ***
+
+print()
+
+# Comparison Operators
+# -----------------------------------------------------------------------------
+print(ord('A'))
+print(ord('B'))
+print(ord('C'))
+print()
+print(ord('a'))
+print(ord('b'))
+print(ord('c'))
+print()
+
+# Comparing 'Objects'
+print (1 is 1.0) # False
+print (1 is not 1.0) # True
+print()
+# Get an Object's ID in memory
+print(id('A'))
+print(id('a'))
