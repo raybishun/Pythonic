@@ -101,3 +101,13 @@ print()
 # Get an Object's ID in memory
 print(id('A'))
 print(id('a'))
+
+# Operator Priority
+# -----------------------------------------------------------------------------
+# Parenthesis --> Exponents (**) --> Positve, Negative, and Bitwise complement --> 
+# *, /, // (floor division), % (Mudulo)
+# Addition, Subtraction
+# Bitwise Shift, Bitwise AND, Bitwise XOR, Bitwise OR\
+# Comparison Operators
+# Boolean
+# Conditions if
