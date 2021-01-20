@@ -15,9 +15,30 @@ print(int('1'))
 
 print()
 
-# Input (with type casting)
+# Input Function (with type casting)
 # -----------------------------------------------------------------------------
 fname = str(input("Enter first name: "))
 lname = str(input('Enter last name: '))
 age = int(input('Age: '))
+print()
+
+# Print using positional arguments
+# -----------------------------------------------------------------------------
+# Print on a new line
+print(fname)
+print(lname)
+print()
+
+# Print on the same line
+print(fname, end=" ")
+print(lname)
+print()
+
+# Print using SEP (note, space is the default separator)
+print(fname, lname, sep=" - ")
+print()
+
+# Print Function with String Interpolation
+# -----------------------------------------------------------------------------
 print(f'{lname}, ' f'{fname}', f'{age}')
+print()
