@@ -22,3 +22,10 @@ myOtherStr = "Ray"
 print(f'{myOtherStr}', f'{id(myOtherStr)}')
 
 print()
+
+# .len(string)
+# -----------------------------------------------------------------------------
+myStr = "Hello World"
+print(len(myStr))
+
+print()
