@@ -36,3 +36,26 @@ del nums[0:3]
 print(nums)
 
 print()
+
+#A few list members
+# -----------------------------------------------------------------------------
+myList = [1, 2, 3, 'really', False, 99, 1.618, "ok"]
+myList.append(4)
+print(myList)
+
+myList.insert(0, 'I inserted this')
+print(myList)
+
+goldenRatioPosition = myList.index(1.618)
+print(goldenRatioPosition)
+
+print(1.618 in myList)
+print(100 not in myList)
+
+anotherList = [5, 4, 6, 300, 95, 2]
+print(sorted(anotherList))
+
+reversedList = list(reversed(anotherList))
+print(reversedList)
+
+print()
