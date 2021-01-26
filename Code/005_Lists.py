@@ -59,3 +59,28 @@ reversedList = list(reversed(anotherList))
 print(reversedList)
 
 print()
+
+
+# Lists within Lists:  Matrices (2D data structures, i.e. rows and columns)
+# -----------------------------------------------------------------------------
+matrix = [[1, 2, 3],
+         [4, 5, 6]]
+print(matrix)
+
+rowCount = len(matrix)
+print(rowCount)
+
+columnCount = len(matrix[0])
+print(columnCount)
+
+# Think RC
+getTheFive = matrix[1][1] 
+print(getTheFive)
+
+# Lists within Lists: Cubes (3D data structures, that is, the same number of rows and columns)
+# -----------------------------------------------------------------------------
+cube = [[1, 2, 3],
+         [4, 5, 6],
+         [7, 8, 9]]
+
+print()
