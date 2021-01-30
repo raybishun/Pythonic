@@ -20,5 +20,10 @@ print(avengers)
 # Creating dictionaries using tuples
 league = dict([('wayne', 50), ('kent', 3000)])
 print(league)
+print()
 
+ages = { 'parker': 25, 'wayne': 50, 'stark': 40 }
+print(ages.keys())
+print(ages.values())
+print(list(ages.keys())) # Cast to a list
 print()
