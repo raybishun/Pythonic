@@ -46,3 +46,27 @@ print(possible_var_or_function_name.isidentifier()) # returns false
 
 some_output = "print me please\n"
 print(some_output.isprintable()) # returns false due to the ESC character
+
+print()
+
+# String Tokens
+# -----------------------------------------------------------------------------
+osi_model = "Application Presentation Session Transport Network DataLink Physical"
+layers = osi_model.split()
+print(layers)
+
+layer_one = osi_model.split(' ')[-1]
+print(layer_one)
+
+join_layers = "; ".join(layers)
+print(join_layers)
+print()
+
+address = ['Peter Parker', '123 Main Street', 'New York, NY 10000']
+printable_address = '\n'.join(address)
+print(printable_address)
+print()
+
+greeting = "Hello, {}!"
+print(greeting.format('Julie'))
+print()
