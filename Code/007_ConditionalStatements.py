@@ -23,3 +23,11 @@ elif name.isspace():
     print("Invalid")
 else:
     print("wth...")
+
+print()
+
+# Pass (type of a placeholder)
+if name.isnumeric():
+    print("isnumeric")
+else:
+    pass
