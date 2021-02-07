@@ -43,3 +43,14 @@ for key, value in symbols.items():
     print(f'{key}\t{value}')
 
 print()
+
+# Nesting Loops and Conditionals
+# -----------------------------------------------------------------------------
+i = 1
+print('Even numbers between 1 and 10:')
+while i <= 10:
+    if i % 2 == 0:
+        print(i)
+    i += 1
+
+print()
