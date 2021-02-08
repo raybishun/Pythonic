@@ -54,3 +54,39 @@ while i <= 10:
     i += 1
 
 print()
+
+# Continue
+# -----------------------------------------------------------------------------
+i = 1
+print('Even numbers between 1 and 10:')
+while i <= 10:
+    if i % 2 != 0:
+        i += 1
+        continue
+    print(i)
+    i += 1
+
+print()
+
+# Break
+# -----------------------------------------------------------------------------
+i = 1
+print('Even numbers between 1 and 10:')
+while i <= 10:
+    print(i)
+    if i % 2 != 0:
+        break
+    print(f'Exited at {i}.')
+    i += 1
+
+print()
+
+# Break and Continue
+# -----------------------------------------------------------------------------
+symbols = ('FB', 'MSFT', 'AMZN', 'AAPL', 'NFLX', 'GOOG')
+for symbol in symbols:
+    if symbol == 'FB':
+        continue
+    elif symbol == 'AMZN':
+        break
+    print(symbol)
