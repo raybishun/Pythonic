@@ -93,8 +93,8 @@ for symbol in symbols:
 
 print()
 
-# Practical use of the Break and Else
-# -----------------------------------------------------------------------------    
+# Practical use of Break and Else
+# -----------------------------------------------------------------------------
 symbols = ('FB', 'MSFT', 'AMZN', 'AAPL', 'NFLX', 'GOOG')
 for symbol in symbols:
     if symbol == 'GOOG':
@@ -102,3 +102,21 @@ for symbol in symbols:
         break
 else:
     print(f'GOOG Not found')
+
+print()
+
+# Range (are immutable)
+# -----------------------------------------------------------------------------
+my_range = range(13)
+print(my_range)
+print(list(my_range))
+
+print()
+
+my_range = list(range(1, 13, 2)) # where the step is 2 in this case
+print(my_range)
+
+print()
+
+for _ in my_range:
+    print(f'{_}.')
