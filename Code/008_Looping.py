@@ -90,3 +90,15 @@ for symbol in symbols:
     elif symbol == 'AMZN':
         break
     print(symbol)
+
+print()
+
+# Practical use of the Break and Else
+# -----------------------------------------------------------------------------    
+symbols = ('FB', 'MSFT', 'AMZN', 'AAPL', 'NFLX', 'GOOG')
+for symbol in symbols:
+    if symbol == 'GOOG':
+        print(f'Found {symbol}!')
+        break
+else:
+    print(f'GOOG Not found')
