@@ -120,3 +120,34 @@ print()
 
 for _ in my_range:
     print(f'{_}.')
+
+print()
+
+# List Comprehensions
+# -----------------------------------------------------------------------------
+symbols = ('fb', 'msft', 'amzn', 'aapl', 'nflx', 'goog')
+
+# Silly way :)
+print(f'Lower: {symbols}')
+uppercase_symbols = []
+for symbol in symbols:
+    uppercase_symbols.append(symbol.upper())
+print(f'Upper: {uppercase_symbols}')
+
+print()
+
+# Using  List Comprehensions
+uppercase_symbols2 = [symbol.upper() for symbol in symbols]
+print(uppercase_symbols2)
+
+print()
+
+only_faang = []
+for symbol in symbols:
+    if symbol in ['fb', 'amzn', 'aapl', 'nflx', 'goog']:
+        only_faang.append(symbol)
+print(only_faang)
+print()
+
+only_faang2 =[symbol for symbol in symbols if symbol in ['fb', 'amzn', 'aapl', 'nflx', 'goog']]
+print(only_faang2)
