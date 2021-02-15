@@ -25,3 +25,18 @@ print(dict['tuple'][1])
 # Clear
 # dict.clear()
 # print(dict)
+
+print()
+
+# Review
+# =============================================================================
+my_list = [{'Tom': 20000, 'Bill': 12000}, ['car', 'laptop', 'TV']]
+print(my_list[0]['Bill'])
+print(my_list[0].get('Bill'))
+
+my_list = [(1, 2), (3, 4), (['c', 'd', 'a', 'm'], [3, 9, 4, 12], 4), 'TV', 42]
+print(my_list)
+my_list[2][0][3] = 'x'
+print(my_list)
+my_list[3] = 'television'
+print(my_list)
