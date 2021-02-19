@@ -22,5 +22,25 @@ for price in prices:
     if(price == 'vwap'):
         break
     print(f'{i}. {price}')
-    i = i + 1
+    i += 1
+print()
+
+# Pass
+# -----------------------------------------------------------------------------
+items = ['a', 'b', 'c']
+for item in items:
+    # TODO: Please implement next week when you get back from vacation...
+    pass
+print()
+
+# While Loops
+# -----------------------------------------------------------------------------
+i = 0
+while i < 10:
+    i += 1
+    if (i == 7):
+        print('skip lucky 7')
+        continue
+    print(i)
+
 print()
