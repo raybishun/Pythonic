@@ -79,3 +79,63 @@ faang = [('fb', 261.56, -7.83), ('aapl', 129.87, 0.16), ('amzn', 3249.90, -78.33
 for symbol, close, change in faang:
     print(f'{symbol}\t{close}\t{change}')
 print()
+
+# Range, Enumerate and Zip Functions
+# =============================================================================
+greeting = "Hello World"
+my_list = list(greeting)
+print(my_list)
+
+for char in list(greeting):
+    print(char)
+
+print()
+
+# Range
+# -----------------------------------------------------------------------------
+for num in range(11):
+    print(num)
+print()
+
+for num in range(1, 11):
+    print(num)
+print()
+
+for num in range(1, 11, 2):
+    # Print only odd numbers
+    print(num)
+print()
+
+# Zip
+# -----------------------------------------------------------------------------
+symbols = ['fb', 'aapl', 'amzn', 'nflx', 'goog']
+closes = [261.56, 129.87, 3249.90, 540.22, 2101.14]
+
+# Creates a tuple of each pair
+symbols_closes = zip(symbols, closes)
+
+for item in symbols_closes:
+    print(item)
+print()
+
+for item in zip(symbols, closes):
+    print(item)
+print()
+
+# What happens if the iterables are not the same size?
+symbols2 = ['fb', 'aapl', 'amzn', 'nflx', 'goog', 'msft', 'gs', 'ms']
+closes2 = [261.56, 129.87, 3249.90, 540.22, 2101.14]
+for item in zip(symbols2, closes2):
+    print(item)
+print()
+
+# Enumerate
+# -----------------------------------------------------------------------------
+for item in enumerate(symbols):
+    print(item)
+print()
+
+# Start index at '1'
+for item in enumerate(symbols, 1):
+    print(item)
+print()
