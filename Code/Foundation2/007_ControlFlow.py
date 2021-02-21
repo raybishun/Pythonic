@@ -122,6 +122,12 @@ for item in zip(symbols, closes):
     print(item)
 print()
 
+# Create a list
+symbols_closes = list(zip(symbols, closes))
+for (symbols, closes) in symbols_closes:
+    print(f'{symbols} :: {closes}')
+print()
+
 # What happens if the iterables are not the same size?
 symbols2 = ['fb', 'aapl', 'amzn', 'nflx', 'goog', 'msft', 'gs', 'ms']
 closes2 = [261.56, 129.87, 3249.90, 540.22, 2101.14]
@@ -138,4 +144,44 @@ print()
 # Start index at '1'
 for item in enumerate(symbols, 1):
     print(item)
+print()
+
+# Queries
+# -----------------------------------------------------------------------------
+symbols = ['fb', 'aapl', 'amzn', 'nflx', 'goog']
+print('msft' in symbol) # returns False
+print()
+
+# Query by key
+print('goog' in {'goog': 2101.14}) # returns True
+print()
+
+# Find value
+print(2101.14 in {'goog': 2101.14}.values()) # returns True
+print()
+
+# Find Min, Max
+closes = [261.56, 129.87, 3249.90, 540.22, 2101.14]
+print(min(closes))
+print(max(closes))
+print()
+
+# Random Numbers
+# -----------------------------------------------------------------------------
+from random import randint
+for ny_lotto in range(6):
+    print(randint(1, 59))
+print()
+
+# Shuffle Numbers
+# -----------------------------------------------------------------------------
+from random import shuffle
+cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+shuffle(cards)
+print(cards)
+
+my_range = list(range(100, 111))
+print(my_range)
+shuffle(my_range)
+print(my_range)
 print()
