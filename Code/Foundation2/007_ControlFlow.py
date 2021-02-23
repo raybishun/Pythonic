@@ -168,7 +168,7 @@ print()
 
 # Random Numbers
 # -----------------------------------------------------------------------------
-from random import randint
+from random import randbytes, randint
 for ny_lotto in range(6):
     print(randint(1, 59))
 print()
@@ -185,3 +185,12 @@ print(my_range)
 shuffle(my_range)
 print(my_range)
 print()
+
+# User Input
+# -----------------------------------------------------------------------------
+user_name = input('Sign in: ').strip()
+print(f'Hello {user_name}, please enter 2 numbers to add.')
+
+num1 = input('Enter 1st number: ')
+num2 = input('Enter 2nd number: ')
+print(int(num1) + int(num2))
