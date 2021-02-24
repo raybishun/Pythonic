@@ -194,3 +194,10 @@ print(f'Hello {user_name}, please enter 2 numbers to add.')
 num1 = input('Enter 1st number: ')
 num2 = input('Enter 2nd number: ')
 print(int(num1) + int(num2))
+
+# Exercises
+# -----------------------------------------------------------------------------
+# Return count of elements from the shortest list
+symbols1 = ['fb', 'aapl', 'amzn', 'nflx', 'goog']
+symbols2 = ['fb', 'aapl', 'amzn', 'nflx', 'goog', 'msft', 'gs', 'ms']
+print(min(len(symbols1), len(symbols2)))
