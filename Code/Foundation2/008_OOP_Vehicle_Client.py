@@ -1,4 +1,4 @@
-from objects.Vehicle_Garage import Vehicle, Truck, Motorcycle
+from objects.vehicles.Vehicle_Garage import Vehicle, Truck, Motorcycle
 
 truck1 = Truck("Ford", "F150")
 car1 = Vehicle("MB", "E500")
