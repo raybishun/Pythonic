@@ -24,7 +24,6 @@ print(my_file_tolist)
 
 my_file.close()
 
-
 # 'with open' (NOTE: The file is automatically closed !!!)
 # -----------------------------------------------------------------------------
 print("---------------")
@@ -48,3 +47,35 @@ with open('Z:\Git\Pythonic\Code\Foundation2\sample2.txt', mode='w+') as my_file2
     my_file2.write("\nw+ means, overwrite and write...")
     my_file2.read()
     print(my_file2)
+
+print("---------------\n")
+
+# Exception Handling
+# -----------------------------------------------------------------------------
+try:
+    with open('Z:\Git\Pythonic\Code\Foundation2\sample2.txt', mode='r') as my_file2:
+        print(my_file2)
+        print(1 + '1')
+except TypeError:
+    print("Type error...")
+except FileNotFoundError: # Probably better to use => IOError instead
+    print(f"File [{my_file2.name}] not found.")
+except:
+    print("Catch all else...")
+finally:
+    print("Done...")
+
+print("---------------\n")
+
+my_file3 = None
+try:
+    my_file3 = open('Z:\Git\Pythonic\Code\Foundation2\sample2.txt', mode='r')
+    print(my_file3.read())
+except IOError:
+    print("IO Error...")
+except:
+    print("Catch all else...")
+finally:
+    if my_file3 != None:
+        my_file3.close()
+    print("Done...")
