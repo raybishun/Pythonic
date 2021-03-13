@@ -39,3 +39,25 @@ b = 0b1100      # 12
 print(bin(a))
 print(bin(b))
 print(bin(a ^ b))
+print()
+
+# =============================================================================
+# Shifting Operators (move either right or left)
+# =============================================================================
+
+# Right Shift
+# -----------------------------------------------------------------------------
+a = 0b110           # 6
+print(bin(a))
+print(bin(a >> 2))  # think of this as pulling digits to the right, past the decimal and chopping them off
+print(a >> 2)
+print(a >> 5)       # returns 0 if you attempt to pull more than what's available
+print()
+
+# Left Shift
+# -----------------------------------------------------------------------------
+a = 0b110           # 6
+print(bin(a))
+print(bin(a << 2))  # think of this as inserting/padding digits immediately left of the decimal
+print(a << 2)       # 24
+print()
