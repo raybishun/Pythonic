@@ -52,5 +52,16 @@ print(f'Binary:     \t{bin(0b1001)}')
 print(f'Octal:      \t{oct(0o11)}')
 print(f'Decimal:    \t{0b1001}')
 print(f'Hexadecimal:\t{0x9}')
+print()
 
 # Converting decimal to binary
+'''
+...128 64  32  16  8   4   2   1
+'''
+
+# Floating-Point Accuracy
+"""
+- Floats are stored as binary fractions in memory
+- However, not all decimals can be represented as binary fractions cleanly, i.e. 0.1
+- As a result of this, the computer makes an approximation
+"""
