@@ -85,3 +85,26 @@ print(True and False)    # False
 print(False and True)    # False
 print(False and False)   # False
 print()
+
+# =============================================================================
+# Comparison Operators
+# =============================================================================
+'''
+<
+>
+<=
+>=
+==
+!=      
+is (the identity operator; tests if the same OBJECT)
+is not
+'''
+print(a > b)
+print(f'{ord("a")}, {ord("b")}')
+print(f"{ord('a')}, {ord('A')}")
+print(f"{id('a')}, {id('A')}") # where in memory
+print()
+
+print([] is []) # actually returns False (because lists are mutable)
+print([] == [])
+print()
