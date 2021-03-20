@@ -108,3 +108,24 @@ print()
 print([] is []) # actually returns False (because lists are mutable)
 print([] == [])
 print()
+
+# =============================================================================
+# Operator Priority
+# =============================================================================
+"""
+Parenthesis and List/Dictionary/Set literals
+Accessing attributes (subscription, slicing, function/method call, attribute reference)
+Exponentiation (**)
+Positive, Negative, and bitwise complement
+Multiplication *, Division /, Floor Division //, Modulo %
+Addition +, Subtraction -
+Bitwise Shifts << & >>
+Bitwise AND &
+Bitwise XOR ^
+Bitwise OR |
+Comparison operators (in, not in, is, is not, <, >, <=, >=, ==, !=)
+Boolean NOT not
+Boolean AND and
+Boolean OR or
+Conditions if
+"""
