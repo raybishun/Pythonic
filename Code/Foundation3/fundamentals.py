@@ -65,3 +65,41 @@ print()
 - However, not all decimals can be represented as binary fractions cleanly, i.e. 0.1
 - As a result of this, the computer makes an approximation
 """
+
+# Typecasting
+print(float(1))             # 1.0
+print(int(1.618))           # Truncates, does not round
+print(type(str(1.618)))     # <class 'str'>
+print(type(float("1.618"))) # <class 'float'>       
+# print(int("1.618"))         # ValueError: invalid literal for int() with base 10: '1.618' (unfortunately, does not truncate)
+print(bool(1))              # True; Almost everything in Python has a boolean representation (except for something that evaluates to 0 or none)
+print(bool(1.618))          # True
+print(bool('hi'))           # True
+print(bool(0.00))           # False
+print(bool(''))             # False
+print('---')
+# Checks if left most value is true, then checks the next value
+# REMEMBER 'and' requires all tokens to be true
+# 'and' will return the first 'falsy' value, or the last 'truthy' value 
+print(1 and 0)              # 0 
+print(bool(1 and 0))        # False
+
+print(1 and 2)              # 2 
+print(bool(1 and 2))        # True
+
+print(1 and 'a')            # a 
+print(f"{bool(1)}\t{bool('a')}")    # True, True
+print(bool(1 and 'a'))      # True
+print('---')
+
+print('a' and 0 and 'b')    # 0 
+print(bool('a' and 0 and 'b')) # False
+
+print("---")
+print(0 and 1)              # 0
+print(1 or 0)               # 1
+print(0 or 1)               # 1
+print(0 or "")              # return nothing, don't know why??
+print(0 or 1 or 'apple')    # 1
+
+print(not 1)                # False
