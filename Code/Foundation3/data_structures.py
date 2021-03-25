@@ -14,8 +14,34 @@ print(my_list)
 del my_list[7]                      # delete the 7th element from the list
 print(my_list)
 
-del mylist                          # deletes the entire list!!!
+del my_list                         # deletes the entire list!!!
 # print(my_list)                    # returns "my_list is not defined"
+print()
+
+my_list = [1, 2, 9, 3, 6, 5, 8, 7]
+my_list.append(4)
+print(my_list)
+
+my_list.insert(2, 'after # 2')
+print(my_list)
+
+print(f'1 is found at index: {my_list.index(1)}')
+
+# True/False
+print(3 in my_list)
+print(3 not in my_list)
+
+my_list =  [1, 2, 9, 3, 6, 5, 8, 7]
+sorted_list = sorted(my_list)
+print(sorted_list)
+
+# Simply reverses the original list
+print(list(reversed(my_list)))
+
+print()
+
+
+
 
 # =============================================================================
 # Sets
