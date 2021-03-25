@@ -37,10 +37,7 @@ print(sorted_list)
 
 # Simply reverses the original list
 print(list(reversed(my_list)))
-
 print()
-
-
 
 
 # =============================================================================
