@@ -32,5 +32,4 @@
 2. To access REPL, simply type 'Python' at the CMD prompt
 ```
 >>> exit()
->>> exit()
 ```
