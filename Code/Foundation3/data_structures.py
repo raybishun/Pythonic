@@ -53,3 +53,28 @@ print()
 # another_set.add(1.168)
 # another_set.remove('b')
 # print(another_set)
+
+# -----------------------------------------------------------------------------
+# Matrices/Cubes (lists within lists)
+# -----------------------------------------------------------------------------
+# Matrices
+my_matrix = [[1,2,3], 
+            [3,5,6]]
+print(my_matrix)
+
+row_count = len(my_matrix)
+print(row_count)        # 2
+
+column_count = len(my_matrix[0])
+print(column_count)     # 3
+
+print(my_matrix[0][2])  # 3
+print(my_matrix[1][2])  # 6
+
+# Cubes (same columns as rows, not just 3s)
+my_cube = [ [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
+            [[10, 11, 12], [13, 14, 15], [16, 17, 18]],
+            [[19, 20, 21], [22, 23, 24], [25, 26, 27]]]
+
+print(my_cube)
+print(my_cube[1][1][0]) # 13
