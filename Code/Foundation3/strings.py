@@ -41,3 +41,4 @@ print(nums[0:7:1])                  # 123456
 print(nums[0:7:2])                  # 0246
 print(nums[5:10])                   # 56789 (NOTE: 1 past the end)
 print(nums[::-1])                   # 9876543210
+print()
