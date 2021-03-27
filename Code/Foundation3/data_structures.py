@@ -40,9 +40,9 @@ print(list(reversed(my_list)))
 print()
 
 
-# =============================================================================
+# -----------------------------------------------------------------------------
 # Sets
-# =============================================================================
+# -----------------------------------------------------------------------------
 # my_list = [1, 2, 2, 3, 4, 5, 5]
 # uniques = set(my_list)
 # print(uniques)
@@ -78,3 +78,36 @@ my_cube = [ [[1, 2, 3], [4, 5, 6], [7, 8, 9]],
 
 print(my_cube)
 print(my_cube[1][1][0]) # 13
+print()
+
+# -----------------------------------------------------------------------------
+# Tuples
+# -----------------------------------------------------------------------------
+# Immutable
+# Created using () and at least 1 ,
+point = (2.0, 3.0)
+print(point)
+
+# Append to a tuple, however, you're creating another tuple
+new_point = point + (4.0,)
+print(new_point)
+print()
+
+# Unpacking a tuple
+a, b, c, = new_point
+print(a)
+print(b)
+print(c)
+print()
+
+# Tuples in Lists, and vice versa
+# (a list within a tuple can be changed), but tuples are immutable
+my_list = [1,2,3]
+my_tuple = (my_list, 4, 5, 6)
+print(my_list)
+print(my_tuple)
+print()
+
+my_list2 = [7,8,9, my_tuple]
+print(my_list2)
+print()
