@@ -111,3 +111,45 @@ print()
 my_list2 = [7,8,9, my_tuple]
 print(my_list2)
 print()
+
+# -----------------------------------------------------------------------------
+# Dictionaries 
+# -----------------------------------------------------------------------------
+# aka: hashes and associated arrays
+# the keys are immutable (but can be any type)
+# keys MUST be unique
+portfolio = {'MSFT': 236.48, 'AAPL': 121.21, 'T': 30.31}
+print(portfolio)
+
+portfolio['T'] = 41.31
+print(portfolio['T'])
+
+del portfolio['T']
+print(portfolio)
+
+print('MSFT' in portfolio)
+
+# A 2nd way to create a dictionary
+portfolio = dict(MSFT=236.48, AAPL=121.21, T=30.31)
+print(portfolio)
+
+# A 3rd way to create a dictionary
+portfolio = dict([('MSFT', 236.48), ('AAPL', 121.21), ('T', 30.31)])
+print(portfolio)
+
+# Get Keys
+print(portfolio.keys())
+
+# Get Values
+print(portfolio.values())
+
+# Cast to a List
+print(list(portfolio))
+print(list(portfolio.keys()))
+print(list(portfolio.values()))
+print(list(portfolio.items()))
+
+# Return as 'dict_items'
+print(portfolio.items())
+
+print()
