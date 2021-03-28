@@ -42,3 +42,18 @@ print(nums[0:7:2])                  # 0246
 print(nums[5:10])                   # 56789 (NOTE: 1 past the end)
 print(nums[::-1])                   # 9876543210
 print()
+
+# -----------------------------------------------------------------------------
+# String Encoding and Functions
+# -----------------------------------------------------------------------------
+# Encoding formats: Unicode and ASCII
+# Unicode: https://en.wikipedia.org/wiki/List_of_Unicode_characters
+# strings are Unicode by default (UTF-8 encoded)
+# UTF-8 (8 bits are used for storage)
+print(ord('a')) # 97
+
+# Print the TM symbol
+print('\u2122')
+print(chr(8482))
+print(chr(0x2122))
+
