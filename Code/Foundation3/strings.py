@@ -56,4 +56,35 @@ print(ord('a')) # 97
 print('\u2122')
 print(chr(8482))
 print(chr(0x2122))
+print()
 
+greeting = "hElLo wOrlD!"
+print(greeting.lower())
+print(greeting.upper())
+print(greeting.capitalize())
+print(greeting.title())
+print()
+
+print(greeting.isascii())
+print(greeting.islower())
+print(greeting.isupper())
+print(greeting.istitle())
+print(greeting.isspace())
+print()
+
+print("1.0".isdecimal())    # False
+print("1".isdecimal())      # True
+print("1".isdigit())        # True
+print("1.0".isnumeric())    # False
+print()
+
+print("1".isalpha())        # False
+print("a".isalpha())        # True
+print("1a".isalnum())       # True
+print()
+
+print("1a".isidentifier())  # False
+print()
+
+print("1a".isprintable())   # True
+print("1a\n".isprintable()) # False (due to the ESC char)
