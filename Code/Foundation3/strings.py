@@ -88,3 +88,18 @@ print()
 
 print("1a".isprintable())   # True
 print("1a\n".isprintable()) # False (due to the ESC char)
+print()
+
+data = "Open High Low Close"
+prices = data.split()
+print(f'Close: {prices[3]}')
+print(f'Close: {prices[-1]}')
+print(", ".join(prices))
+print('\n'.join(prices))
+
+template = "Hello, {}!"
+print(template.format('Ray'))
+
+print("{1}, {0} {1} again!".format('Ray','Hello'))
+
+print()
