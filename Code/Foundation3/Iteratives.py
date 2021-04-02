@@ -21,12 +21,26 @@ while i <= 10:
     i += 1
 print()
 
+# While-else
+i = 1
+while i <= 3:
+    print(i)
+    i += 1
+else:
+    print('Done')
+print()
+
+# For-else
+for i in [1,2,3,4,5]:
+    if i == 6:
+        print(f'Found :{i}')
+        break
+else:
+    print(f'6 not found.')
+
+print()
 
 exit()
-
-
-
-
 
 for letter in phrase:
     print(letter)
