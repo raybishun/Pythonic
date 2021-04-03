@@ -83,7 +83,6 @@ print(search_results2)
 
 exit()
 
-
 for letter in phrase:
     print(letter)
 
