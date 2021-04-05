@@ -21,10 +21,10 @@ greeting('Ray')
 greeting(1.618)
 print(add(5, 3))
 
-# Using the 'all' positional method
+# Passing args by position (positional args)
 print(user_info("Ray", 'ray@mail.com'))
 
-# Using the 'all' keyword method
+# Passign args by keyword
 print(user_info(location='NY', name="Ray", email='ray@mail.com', ))
 
 # Mix (*** NOTE, once use start uing keyword args, you MUST pass all
