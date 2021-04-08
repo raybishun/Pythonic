@@ -24,7 +24,7 @@ def my_function():
 print()
 
 # -----------------------------------------------------------------------------
-# Hiding (aka Shadowing)...but I don't know why?? same as above...
+# Variable Name Hiding (aka Shadowing)...but I don't know why?? same as above...
 # -----------------------------------------------------------------------------
 y = 5
 
@@ -35,4 +35,20 @@ def my_other_function(y):
 my_other_function(10)
 
 print(f'Value of of \'global y\' is: {y}')
+print(id(y))
+print()
+print()
+
+# -----------------------------------------------------------------------------
+# Global Keyword (creating a global variable inside a function)
+# -----------------------------------------------------------------------------
+def my_other_function2(n):
+    global g
+    g = n + 1
+    print(f'Value of g in the function is: {g}')
+    print(id(y))
+
+my_other_function2(100)
+
+print(f'Value of of g outside of function: {g}')
 print(id(y))
