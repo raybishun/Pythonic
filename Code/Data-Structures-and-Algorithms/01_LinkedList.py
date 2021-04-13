@@ -18,9 +18,22 @@ class LinkedList:
 
         current.next = Node(value)
 
+    def print(self):
+        current = self.start
+
+        while current is not None:
+            print(current.value)
+            current = current.next
+
 linked_List = LinkedList()
+
+# Populate link
 linked_List.insert(1)
 linked_List.insert(2)
 linked_List.insert(3)
 linked_List.insert(4)
 linked_List.insert(5)
+
+# Print link list
+print("---")
+linked_List.print()
