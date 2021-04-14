@@ -1,3 +1,6 @@
+# -----------------------------------------------------------------------------
+# Linked Lists
+# -----------------------------------------------------------------------------
 class Node:
     def __init__(self, value):
         self.value = value
@@ -25,6 +28,9 @@ class LinkedList:
             print(current.value)
             current = current.next
 
+# -----------------------------------------------------------------------------
+# Client
+# -----------------------------------------------------------------------------
 linked_List = LinkedList()
 
 # Populate link
@@ -35,5 +41,4 @@ linked_List.insert(4)
 linked_List.insert(5)
 
 # Print link list
-print("---")
 linked_List.print()
