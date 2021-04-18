@@ -26,10 +26,13 @@ def preorder(root):
         preorder(root.left)
         preorder(root.right)
 
+def inorder(root):
+    if root:
+        inorder(root.left)
+        print(root.value)
+        inorder(root.right)
 
-# -----------------------------------------------------------------------------
-# Consumer
-# -----------------------------------------------------------------------------
+# Populating a Tree
 root = Node(50)
 insert(root, Node(10))
 insert(root, Node(2))
@@ -38,4 +41,9 @@ insert(root, Node(15))
 insert(root, Node(60))
 insert(root, Node(90))
 
+# Preorder traverals of a Tree
 preorder(root)
+print()
+
+# Inorder traverals of a Tree
+inorder(root)
