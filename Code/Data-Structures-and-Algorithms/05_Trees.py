@@ -48,6 +48,33 @@ def getMinimumValueNode(root):
             root = root.left
         return root
 
+# Deleting a node from a BST
+def deleteNode(root, value):
+    if root is None:
+        return root
+    
+    if value < root.value:
+        root.left = deleteNode(root.left, value)
+    elif value > root.value:
+        root.right = deleteNode(root.right, value)
+    
+    else:
+        if root.left is None:
+            temp = root.right
+            root = None
+            return temp
+        elif root.right is None:
+            temp = root.left
+            root = None
+            return temp
+        else:
+            temp = getMinimumValueNode(root.right)
+            root.value = temp.value
+
+            root.right = deleteNode(root.right, temp.value)
+    return root
+print()
+
 # -----------------------------------------------------------------------------
 # Consumer
 # -----------------------------------------------------------------------------
@@ -75,3 +102,7 @@ print()
 # Use a Binary Search Tree (BST) to return the minimum value node
 print(getMinimumValueNode(root).value)
 print()
+
+# Deleting a node from a BST
+deleteNode(root, 50)
+postorder(root)
