@@ -41,6 +41,13 @@ def postorder(root):
         postorder(root.right)
         print(root.value)
 
+# Binary Search Tree (BST)
+def getMinimumValueNode(root):
+    if root:
+        while root.left is not None:
+            root = root.left
+        return root
+
 # -----------------------------------------------------------------------------
 # Consumer
 # -----------------------------------------------------------------------------
@@ -63,4 +70,8 @@ print()
 
 # Postorder traveral of a Tree
 postorder(root)
+print()
+
+# Use a Binary Search Tree (BST) to return the minimum value node
+print(getMinimumValueNode(root).value)
 print()
