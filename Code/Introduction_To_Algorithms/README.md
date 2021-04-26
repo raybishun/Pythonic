@@ -17,8 +17,8 @@
 
 ### Binary Search
 * Requires a sorted collection
-* Continuously split in the middle (and ask a comparison question)
+* Continuously split in the middle, and ask a comparison question
 
 ### Complexity
-* Time Complexity: Measures the time it takes for an algorithm to run
-* Space Complexity: Measures the storage used by an algorithm
+* Time Complexity - measures the time it takes for an algorithm to run
+* Space Complexity - measures the storage used by an algorithm
