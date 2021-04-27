@@ -22,3 +22,8 @@
 ### Complexity
 * Time Complexity - measures the time it takes for an algorithm to run
 * Space Complexity - measures the storage used by an algorithm
+
+### Constant and Logarithmic Time
+* Constant Time, O(1) - where n is irrelevant; it doesn't matter if n is 1 or 1M - the algorithm takes the same amount of time to execute
+
+* Logarithmic Time, O(log n) - as the data set increases, the algorithm's execution time increases logarithmically
