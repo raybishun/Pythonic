@@ -27,3 +27,8 @@
 * Constant Time, O(1) - where n is irrelevant; it doesn't matter if n is 1 or 1M - the algorithm takes the same amount of time to execute
 
 * Logarithmic Time, O(log n) - as the data set increases, the algorithm's execution time increases logarithmically
+
+### Linear and Quadratic Time
+* Linear Time, O(n) - the algorithm's runtime  is directly proportional to the data set's size
+
+* Quadratic Time - O(n^2) - the algorithm's runtime increases by a factor of n squared as the data set's size increases
