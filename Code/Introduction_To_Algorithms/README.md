@@ -37,3 +37,7 @@
 * Big O - where the 'O' means 'Order of magnitude', NOT complexity!
 * O(1) - means, 1 or 1,000 - completes in the same amount of time (constant time)
 * O(n) - linear time, meaning runtime increases, as the data set increases
+
+### Quasilinear Time
+* Quasilinear Time, O(n log n) - for a data set of size n, an algorithm executes n number of operations where each operation runs in log n (logarithmic) time
+* Used in Sorting alorithms, i.e., Merge Sorts
