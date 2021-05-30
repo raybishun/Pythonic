@@ -13,9 +13,18 @@ def find_fib(n):
 
     return find_fib(n - 2) + find_fib(n - 1)
 
-fib_sequence = int(input("Get fib value a sequence? "))
-print(find_fib(fib_sequence))
+# fib_sequence = int(input("Get fib value a sequence? "))
+# print(find_fib(fib_sequence))
+print()
 
 # NOTE
 # Python doesn't use 'Tail Call Optimization', 
 # so the higher the value, the longer it will take to complete
+
+# -----------------------------------------------------------------------------
+# Functions: *args and **kwargs
+# -----------------------------------------------------------------------------
+def add(*args):
+    return sum(args)
+
+print(add(2,3,3,2))
