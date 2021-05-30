@@ -156,11 +156,31 @@ print()
 # -----------------------------------------------------------------------------
 # Nesting Loops and Conditions, Controls: List Comprehensions
 # -----------------------------------------------------------------------------
-colors = ['red', 'blue', 'orange', 'green', 'orange', 'yellow']
+colors = ['red', 'blue', 'orange', 'green', 'yellow']
 
+# Traditional Way
+# -----------------------------------------------------------------------------
 uppercase_colors = []
-
 for color in colors:
     uppercase_colors.append(color.upper())
-
 print(uppercase_colors)
+print()
+
+# Filtering Eample
+warm_colors = []
+for color in colors:
+    if color in ['red', 'orange', 'yellow']:
+        warm_colors.append(color)
+print(warm_colors)
+print()
+
+# List Comprehensions
+# -----------------------------------------------------------------------------
+uppercase_colors2 = [color.upper() for color in colors]
+print(uppercase_colors2)
+print()
+
+# Filtering Eample with List Comprehensions
+warm_colors = [color for color in colors if color in ['red', 'orange', 'yellow']]
+print(warm_colors)
+print()
