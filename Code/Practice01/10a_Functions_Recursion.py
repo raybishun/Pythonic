@@ -20,11 +20,3 @@ print()
 # NOTE
 # Python doesn't use 'Tail Call Optimization', 
 # so the higher the value, the longer it will take to complete
-
-# -----------------------------------------------------------------------------
-# Functions: *args and **kwargs
-# -----------------------------------------------------------------------------
-def add(*args):
-    return sum(args)
-
-print(add(2,3,3,2))
