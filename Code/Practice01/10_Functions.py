@@ -46,3 +46,4 @@ def can_drive(age, driving_age=16):
 
 print(can_drive(17))
 print(can_drive(17, 21))
+print()
