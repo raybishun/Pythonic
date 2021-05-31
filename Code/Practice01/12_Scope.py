@@ -23,9 +23,25 @@ def set_y():
 
 set_y()
 
-while y < 6: # Exception: 'y is not defined '
-    print(y) 
-    y += 1   
+# while y < 6: # Exception: 'y is not defined '
+#     print(y) 
+#     y += 1   
 
-print(y)     
+# print(y)     
 print()
+
+# Name Hiding (aka Shadowing)
+# -----------------------------------------------------------------------------
+y = 5
+
+def set_x(y):               
+    print("Inner y: ", y)   # 10
+    x = y
+    y = x
+
+set_x(10)
+
+print("Outer y: ", y)       # 5
+
+# 
+# -----------------------------------------------------------------------------
